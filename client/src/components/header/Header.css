@@ -1,0 +1,126 @@
+.header{
+    background-color: #003580;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+    position: relative;
+}
+ .listMode{
+    margin: 20px 0px 0px 0px;
+}
+.headerLists{
+    display: flex;
+    gap: 40px;
+}
+.headerListItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+}
+
+.headerListItem:hover ,.headerListItem.active{
+    box-shadow:3px 3px 10px rgb(255, 252, 252,0.5);
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: padding .2s;
+}
+.headerDescription{
+    margin: 20px 0;
+}
+.headerBtn{
+    background-color: #0071c2;
+    font-weight: 500;
+    padding: 10px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    max-width: 1024px;
+    bottom: -128px;
+}
+
+.headerSearchIcon{
+    color: lightgray;
+}
+
+.headerSearchItem{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.headerSearchInput{
+    border: 0;
+    outline: 0;
+}
+.headerSearchText{
+    color: lightgray;
+    cursor: pointer;
+}
+.date{
+    position: absolute;
+    top: 3.5rem;
+    z-index: 2;
+}
+
+.options{
+    z-index: 2;
+    position: absolute;
+    top: 3.3rem;
+    color: gray;
+    background-color: white;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    
+    
+}
+.optionsItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size:12px ;
+    color: black;
+}
+.optionCounterBtn{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #0071c2;
+    border: 1px solid #0071c2;
+    cursor: pointer;
+}
+
+.input{
+    border: 1px solid red;
+    padding: 5px;
+    transition: border .5s;
+}

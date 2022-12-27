@@ -1,0 +1,121 @@
+.searchItem {
+    width: 100%;
+    display: flex;
+    border: 2px solid #cbc6c6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.searchItem-img {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.searchItem-Desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchItemTitle {
+    font-size: 20px;
+    color: rgb(55, 138, 255);
+    margin-bottom: 8px;
+}
+
+.searchItemDistance {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.searchItemTaxiOp {
+    display: inline;
+    font-size: 14px;
+    color: white;
+    background-color: green;
+    padding: 2px 3px;
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 11px;
+}
+
+.searchItemSubtitle {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.searchItemFeatures {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.searchItemCancelOp,
+.searchItemCancelSubtitle {
+    color: rgb(6, 154, 6);
+}
+
+.searchItemCancelOp {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.searchItemCancelSubtitle {
+    font-size: 12px;
+    width: max-content;
+    margin-top: 8px;
+}
+
+.searchItemDetails {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.searchItemRating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchItemRating>span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.rating {
+    background-color: #003580;
+    color: white;
+    padding: 0px 3px;
+    font-size: 12px !important;
+    display: flex;
+    align-items: center;
+}
+
+.searchItemPrice {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.searchItemPriceTaxes {
+    font-size: 12px;
+}
+
+.searchItemButton {
+    background-color: #0071c2;
+    color: white;
+    border: 0;
+    padding: 8px 37px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.searchItemButton:hover{
+    background-color: #0d66a6;
+    transition: background .3s;
+}

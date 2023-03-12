@@ -17,7 +17,7 @@ const FeaturedProperty = () => {
         setLoading(false);
     }, [])
 
-
+    console.log(data);
     return (
         <div className='fp'>
             {loading ?

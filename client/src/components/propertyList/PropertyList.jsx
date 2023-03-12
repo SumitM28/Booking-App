@@ -27,7 +27,7 @@ const PropertyList = () => {
     
       setLoading(false)
   },[])
-  
+  console.log(data);
   return (
 
 

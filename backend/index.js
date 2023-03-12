@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
-
+import cors from "cors";
 // routes
 import authRoute from '../backend/routes/auth.js';
 import hotelsRoute from '../backend/routes/hotels.js';
@@ -41,7 +41,7 @@ const app=express();
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
 app.use(cookieParser());
-
+app.use(cors());
 app.use('/api/auth',authRoute);
 app.use('/api/hotels',hotelsRoute);
 app.use('/api/rooms',roomsRoute);

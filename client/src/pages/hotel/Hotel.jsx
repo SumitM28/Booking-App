@@ -20,15 +20,6 @@ const Hotel = () => {
   const [laoding, setLoading] = useState(true)
   let {dates, options}=useContext(SearchContext)
   // console.log(dates);
-
-  const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
-  function dayDifference(date1, data2) {
-    const timeDiff = Math.abs(data2.getTime() - date1.getTime());
-    const diffDays = Math.ceil(timeDiff / MILLISECONDS_PER_DAY);
-    return diffDays;
-  }
-
-  let days=dayDifference(dates[0].endDate, dates[0].startDate)
   useEffect(() => {
     fetch(`/hotels/find/${path}`)
       .then(res => res.json())
@@ -37,6 +28,15 @@ const Hotel = () => {
   
 
   }, [path,dates])
+  const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
+  function dayDifference(date1, data2) {
+    const timeDiff = Math.abs(data2.getTime() - date1.getTime());
+    const diffDays = Math.ceil(timeDiff / MILLISECONDS_PER_DAY);
+    return diffDays;
+  }
+
+  // let days=dayDifference(dates[0].endDate, dates[0].startDate)
+  let days=9
   
   console.log(days)
   // console.log(data)
@@ -111,7 +111,9 @@ const Hotel = () => {
               <div className="hotelDetailsTexts">
                 <h1 className="hotelTitle">{data.title}</h1>
                 <p className="hotelDesc">
-                  {data.desc}
+                  { data.desc?data.desc:<>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corporis adipisci commodi minus libero ex quo magnam numquam nemo a temporibus, quia praesentium earum cupiditate impedit distinctio voluptate soluta maiores deserunt? Ratione pariatur nam possimus vitae repellat provident libero amet, quasi harum soluta facilis accusamus excepturi atque consectetur accusantium omnis nemo qui reprehenderit eligendi exercitationem beatae, impedit quae tempora. Ea quia, accusantium beatae esse facilis dignissimos libero architecto. Amet eum libero magni voluptas aperiam, praesentium ullam eius magnam dignissimos qui laboriosam officiis rerum voluptatibus dolore repudiandae totam distinctio in quidem veritatis neque deleniti. Possimus obcaecati eos vel sequi repudiandae iste officiis nihil harum sed, voluptate vitae mollitia nisi, ea asperiores. In deserunt reprehenderit adipisci exercitationem odit doloribus debitis dolores mollitia voluptatum officiis beatae facilis quisquam itaque nostrum maiores perferendis, repudiandae corporis, eum voluptas culpa aperiam ex nesciunt nisi. Vel nihil autem sapiente perferendis omnis, voluptate ut soluta repellat. Asperiores, eos.
+                  </> }
                 </p>
               </div>
               <div className="hotelDetailsPrices">

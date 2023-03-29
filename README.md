@@ -75,7 +75,7 @@ cd frontend
 
 The backend server will run on http://localhost:4500 and the frontend client will run on http://localhost:3000.
 
-## Uses
+## Features
 
 1. Register as a new user or login with an existing account.
 2. Browse the products and add hotel in hotels list.
